@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<h2>PROGRAMA "ADIVINANZAS"</h2>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<hr>")
+	}
+
+	function imprimirEnPantalla(frase) {
+		document.write("<big>" + frase + "</big>");
+		saltarLinea();
+	}
+
+	var numero = Math.round(Math.random()*10);
+	var intentos = 3;
+	var contador = 1;
+	
+
+	while (contador <= intentos) {
+		var numeroUsuario = parseInt(prompt("Adivine el número del 1 al 10"))
+
+		if(numero == numeroUsuario){
+			alert("Usted acertó en el intento " + contador);
+			break;
+		}else {
+			alert("Usted erró! Cuál será el número?");
+		}
+
+		contador++
+
+	if (contador == 4) {
+		imprimirEnPantalla("Se acabaron los intentos, era el #" + numero + ",una vez más FALLASTE")
+	}
+
+	}
+
+</script>

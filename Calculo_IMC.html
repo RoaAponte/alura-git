@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<h2>PROGRAMA "CALCULA TU IMC"</h2>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<hr>")
+	}
+
+	function imprimirEnPantalla(frase) {
+		document.write("<big>" + frase + "</big>");
+		saltarLinea();
+	}
+
+	function calcularImc(peso, altura) {
+		return (peso / (altura*altura));
+	}
+
+	var nombreInformado = prompt("Cuál es tu nombre?")
+	var pesoInformado = prompt("Estás gordit@? Neeeee, coloca tu peso")
+	var alturaInformada = prompt("Tranquilo, el peso va en relación con la altura, cuánto mides?")
+
+	imcCalculado = calcularImc(pesoInformado, alturaInformada)
+
+	document.write("<br>")
+	imprimirEnPantalla("El IMC de " + nombreInformado + " es: " + imcCalculado);
+
+	if (imcCalculado < 18.5){
+		imprimirEnPantalla(nombreInformado + " lamento informarte que... ESTÁS DESNUTRIDO. Lastimosamente acá no es caridad, a comer donde lo disecaron")
+	}
+
+	if (imcCalculado <= 18.5) {
+		if (imcCalculado < 25) {
+			imprimirEnPantalla(nombreInformado + " se le informa que... ESTÁ BIEN. No vuelva si no tiene problemas")
+	}}
+
+	if (imcCalculado >= 25) {
+		if (imcCalculado < 30) {
+		imprimirEnPantalla(nombreInformado + " lamento informarte que... TIENES SOBREPESO. Agradece, el anterior ya era obeso")
+	}}
+
+	if (imcCalculado >= 30){
+		imprimirEnPantalla(nombreInformado + " lamento informarte que... ESTÁS OBESOOO. Se sugieren los siguientes apodos: Megaboy/ Porki/ Mata básculas/ Buñuelo con patas")
+	}	
+	
+
+</script>

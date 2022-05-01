@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h2>PROGRAMA "CALCULA PUNTOS DE LA LIGA DE FÚTBOL"</h2>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<hr>")
+	}
+
+	function imprimirEnPantalla(frase) {
+		document.write("<big>" + frase + "</big>");
+		saltarLinea();
+	}
+
+	var nombreClub = prompt("Club:");
+	var victorias =  parseInt(prompt("Cuántos partidos ganó tu equipo esta temporada?"));
+	var empates = parseInt(prompt("Cuántos partidos empató?"));
+	var puntos = ((victorias*3)+empates);
+
+
+	document.write("<br>")
+	imprimirEnPantalla("Los puntos acumulados por " + nombreClub + " son: " + puntos);
+
+	if (puntos < 28) {
+		imprimirEnPantalla ("<h1>" + nombreClub + " tu equipo, es basura" + "</h1>");
+	}
+
+	if (puntos > 28) {
+		imprimirEnPantalla ("<h1>" + "Tu equipo se superó, pero...es campeón?" + "</h1>");
+	}
+	
+	if (puntos == 28) {
+		imprimirEnPantalla ("<h1>" + "Oh Mediocre! Siempre igual, ni mejor ni peor" + "</h1>");
+	}
+
+</script>

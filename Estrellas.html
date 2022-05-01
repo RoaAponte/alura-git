@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h2>PROGRAMA "ADIVINANZAS"</h2>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>")		
+	}
+
+	function imprimirEnPantalla(frase) {
+		document.write("<big>" + frase + "</big>");
+		saltarLinea();
+	}
+
+	for (var filas = 1; filas <= 3; filas++){
+
+		for (var columnas = 1; columnas <= 7; columnas++){
+
+			document.write("*");
+
+		}
+
+		saltarLinea();
+	}
+
+</script>

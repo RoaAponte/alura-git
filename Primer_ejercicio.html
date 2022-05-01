@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<br>")
+	}
+
+	var tanqueGas = 40
+	var recorridoGas = 480
+	var consumoGas = (recorridoGas)/(tanqueGas)
+	var rendimientoAlcohol = 300/40
+
+	document.write("Si un carro tiene un tanque de " + (tanqueGas) + " litros de gasolina, en un camino de " + (recorridoGas) + " KM consume " + (consumoGas) + " KM/litros. O lo que es lo mismo, su consumo por KM es de: " + (consumoGas) + " KM por litro")
+
+	saltarLinea();
+
+	document.write("Pero si el carro tiene un tanque de Alcohol entonces su consumo por KM es: " + (rendimientoAlcohol) + "KM por litro")
+
+</script>

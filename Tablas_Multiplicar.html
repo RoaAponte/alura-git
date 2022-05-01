@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h2>PROGRAMA "EN QUÉ AÑOS HUBO MUNDIALES?"</h2>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<hr>")
+	}
+
+	function imprimirEnPantalla(frase) {
+		document.write("<big>" + frase + "</big>");
+		saltarLinea();
+	}
+
+	var multiplicador = 1
+	var tablaDel = parseInt(prompt("Verás la tabla del número que pongas"))
+
+	imprimirEnPantalla("WHILE")
+
+	while (multiplicador <= 10) {
+		imprimirEnPantalla(tablaDel*multiplicador);
+		multiplicador++;
+	}
+
+	imprimirEnPantalla("FOR")
+
+	for (var multiplicador=1; multiplicador <= 10; multiplicador++){
+		imprimirEnPantalla(tablaDel*multiplicador);
+	}
+
+</script>

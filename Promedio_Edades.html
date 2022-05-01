@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h2>PROGRAMA "PROMEDIO DE EDADES"</h2>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<hr>")
+	}
+
+	function imprimirEnPantalla(frase) {
+		document.write("<big>" + frase + "</big>");
+		saltarLinea();
+	}
+
+	var nombreFamilia = prompt("Cómo identifica su familia?")
+	var miembrosFamilia = parseInt(prompt("Cuántos miembros hay en su familia?"));
+	var contador = 0;
+	var totalEdades = 0;
+
+	while(contador < miembrosFamilia) {
+		edad = parseInt(prompt("Ingrese la edad del familiar"));
+		totalEdades = totalEdades + edad;
+		contador++
+	}
+
+	mediaEdades = totalEdades/miembrosFamilia;
+
+	imprimirEnPantalla("El promedio de edad de la familia " + nombreFamilia + " es: " + mediaEdades);
+	imprimirEnPantalla("Se acabó el programa, vemola")
+
+
+</script>

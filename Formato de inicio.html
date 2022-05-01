@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>")
+		document.write("<hr>")
+	}
+
+	function imprimirEnPantalla(frase) {
+		document.write("<big>" + frase + "</big>");
+		saltarLinea();
+	}
+
+	var anho = 2022;
+
+	imprimirEnPantalla("La suma de las edades de estos jovenes (Daniel, Josh y Ana) te llevará a un mundo onírico...")
+
+	
+	imprimirEnPantalla("Daniel nació en el año... "+ (anho-29))
+
+	
+	imprimirEnPantalla("Josh nació en el año... " + (anho-11))
+	
+	
+	imprimirEnPantalla("Ana nació en el año..."+ (anho-20))
+
+		
+	imprimirEnPantalla("Por lo tanto la suma de las edades de estos jovenes es: 60")
+
+	imprimirEnPantalla("Daniel tiene: " + (anho-1993) + ", Josh tiene: " + (anho-2011) + " y Ana tiene: " + (anho-2002))
+
+	
+
+	edadDaniel = (anho-1993)
+	edadJosh = (anho-2002)
+	edadAna = (anho-2011)
+	promedio = ((edadDaniel+edadJosh+edadAna)/3)
+
+	imprimirEnPantalla("Y el promedio de las edades del año " + (anho) +" es: " + Math.round(promedio))
+	
+	
+	anho = 2021
+
+	imprimirEnPantalla("Pero si estuvieramos en el " + (anho))
+	
+	
+	imprimirEnPantalla("Daniel tendría: " + (anho-1993) + ", Josh tendría: " + (anho-2011) + " y Ana tendría: " + (anho-2002))
+	
+	
+	var edadDaniel = (anho-1993)
+	var edadJosh = (anho-2002)
+	var edadAna = (anho-2011)
+	promedio = (((anho-1993)+(anho-2002)+(anho-2011))/3)
+
+	imprimirEnPantalla("Y el promedio de las edades del año " + (anho) +" sería: " + Math.round(promedio))
+
+</script>
+	
